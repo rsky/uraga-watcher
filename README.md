@@ -6,6 +6,16 @@
 
 Cloudflare WorkersのCron Triggersを使って毎日6,12,18時に実行します。
 
+## 通知の例
+
+### 入航予定がないとき
+
+![入航予定なし](./img/not_scheduled.jpg)
+
+### 入航予定があるとき
+
+![入航予定あり](./img/scheduled.jpg)
+
 ## Getting Started
 
 ### 1. Installation
