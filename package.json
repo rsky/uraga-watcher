@@ -1,0 +1,25 @@
+{
+  "name": "uraga-watcher",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ryusuke Sekiyama",
+    "email": "rsky0711@gmail.com",
+    "url": "https://github.com/rsky"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "exam": "tsx src/exam.ts"
+  },
+  "dependencies": {
+    "htmlparser2": "^9.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240320.1",
+    "@slack/types": "^2.11.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3",
+    "wrangler": "^3.38.0"
+  }
+}
