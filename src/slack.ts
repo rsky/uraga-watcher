@@ -151,6 +151,10 @@ function buildLink(text: string, url: string): RichTextBlock {
             name: 'link' // 🔗
           },
           {
+            type: 'text',
+            text: ' '
+          },
+          {
             type: 'link',
             url,
             text
