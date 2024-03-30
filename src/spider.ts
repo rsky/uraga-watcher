@@ -108,13 +108,14 @@ export async function spider(url: string, shipType: string | null = '官船'): P
             // 入航予定情報のテーブル内でない場合は無視
             break;
           }
-          if (currentShip.time === '') {
+          const ship = cleanupShip(currentShip);
+          if (ship.time === '') {
             // thead>trの場合はtdが存在しないので
             break;
           }
           // 船舶情報を追加
-          if (currentShip.type.trim() === shipType || shipType === null) {
-            result[currentCourse].push(cleanupShip(currentShip));
+          if (ship.type === shipType || shipType === null) {
+            result[currentCourse].push(ship);
           }
           break;
         }
